@@ -6,24 +6,12 @@ const subtract = function(a, b) {
   return a - b
 };
 
-const sum = function(n) {
-	let sum = 0;
-  
-  n.forEach((number) => {
-    sum += number;
-  });
-
-  return sum;
+const sum = function(array) {
+  return array.reduce((total, item) => total + item, 0);
 };
 
-const multiply = function(a) {
-  let mult = 1;
-  
-  a.forEach((number) => {
-    mult *= number;
-  })
-
-  return mult;
+const multiply = function(array) {
+  return array.reduce((total, item) => total * item, 1);
 };
 
 const power = function(a, b) {
